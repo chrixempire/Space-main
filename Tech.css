@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#button4{
+    border-bottom: 3px solid white;
+    color: white;
+}
+#button1{
+    border: none;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("starter-code/assets/technology/background-technology-desktop (2).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.line{
+    border: 0.1px solid rgb(255, 255, 255, 0.2);
+    width: 550px;
+    z-index: 99;
+    position: relative;
+    left: 40px;
+}
+.nav-con{
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    width: 795px;
+    z-index: 1;
+}
+.left1{
+    padding-left: 200px;
+}
+.pick{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 50px;
+
+}
+.span2{
+    color: grey;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#buttn1, #buttn2, #buttn3{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 100%);
+    color: white;
+    font-size: 25px;
+    
+}
+#buttn1{
+    color: black;
+    background-color: white;
+}
+#buttn1:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s ease-out;
+}
+#buttn2:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s ease-out;
+}
+#buttn3:hover{
+    color: black;
+    background-color: white;
+    transition: 0.7s ease-out;
+}
+.right{
+    color: white;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding-left: 200px;
+}
+#right{
+    width: 55%;
+    margin-top: 50px;
+}
+#one{
+    font-size: 16px ;
+    font-family: 'Barlow Condensed', sans-serif;
+    color: rgba(208, 214, 249, 100%);
+}
+#two{
+    font-size: 50px;
+    font-family: 'Bellefair', serif;
+}
+.term{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column ;
+    gap: 20px;
+}
+#Three{
+    font-size: 14px;
+    line-height:22px ;
+    font-family: 'Barlow', sans-serif;
+    color: rgba(208, 214, 249, 100%);
+}
+#story{
+    width: 420px;
+    text-align: left;
+}
+#left{
+    width: 36%;
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-right: 0px;
+
+}
+#imag{
+    width: 550px;
+    height: 500px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media screen and (max-width : 950px){
+    body{
+        width: 100%;
+        height: 100vh;
+        background-image: url("starter-code/assets/technology/background-technology-tablet (2).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .logo{
+        margin-left: 50px;
+
+    }
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+       
+    }
+    .line{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-left: 20px;
+        padding-right: 20px;
+
+    
+    }
+    .nav-links button{
+        background-color: transparent;
+        width: 110px;
+        height:110px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-con{
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        width: 100%;
+        z-index: 1;
+        margin-top: 0px;
+    }
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+    }
+    #buttn1{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .total{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    
+    }
+    .right{
+        color: white;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+        padding-left:0px;
+        text-align: center;
+    }
+    #right{
+        width: 95%;
+        margin-top: 0px;
+    }
+    #left{
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+    #imag{
+        width: 100%;
+        height: 450px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .right{
+        color: white;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        padding-left: 0px;
+    }
+    #buttn1, #buttn2, #buttn3{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 100%);
+        color: white;
+        font-size: 25px;
+        
+    }
+    
+    #buttn1{
+        color: black;
+        background-color: white;
+    }
+    #buttn1:hover{
+        color: black;
+        background-color: white;
+        transition: 0.7s ease-out;
+    }
+    #buttn2:hover{
+        color: black;
+        background-color: white;
+        transition: 0.7s ease-out;
+    }
+    #buttn3:hover{
+        color: black;
+        background-color: white;
+        transition: 0.7s ease-out;
+    }
+    #Three{
+        font-size: 15px;
+        line-height:22px ;
+        font-family: 'Barlow', sans-serif;
+        color: rgba(208, 214, 249, 100%);
+    }
+    #story{
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        margin-top: -20px;
+    }
+    .left1{
+        padding-left: 50px;
+    }
+    .pick{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 35px;
+        color: white;
+        margin-bottom: 35px;
+        margin-top: 25px;
+    
+    }
+    .span2{
+        color: grey;
+        margin-right: 15px;
+        font-weight: bold;
+    }
+    #one{
+        font-size: 18px ;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: rgba(208, 214, 249, 100%);
+    }
+    #two{
+        font-size: 50px;
+        font-family: 'Bellefair', serif;
+    }
+}
+
+@media screen and (max-width : 600px){
+    
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url("starter-code/assets/technology/background-technology-mobile.jpg");
+        background-size: cover;
+        width: 100%;
+        height: 862px;
+
+    } 
+    header{
+        margin-top: 30px;
+
+    }
+
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(25px); 
+        width: 75%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s;
+        padding-top: 100px;
+
+    
+    }
+    .hamburger:active{
+        scroll-behavior: smooth;
+    }
+    .navitem{
+        margin: 30px 0;
+    }
+    .navmenu.active{
+        right: 0;
+        transition: 0.4s ease-in-out;
+        scroll-behavior: smooth;
+
+    }
+    .navmenu{
+        display: block;
+    }
+    nav{
+        display: block;
+    }
+    header{
+        display: block;
+    }
+    .navlink{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        padding: 5px 35px;
+        font-size: 23px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 300;
+        color: white;
+    }
+    .span1{
+        font-size: 23px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+        color: white;
+        margin-right: 10px;
+    }
+    #imag{
+        width: 100%;
+        height: 250px;
+    }
+    .left1{
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pick{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size:25px;
+        color: white;
+        margin-bottom: 0px;
+        margin-top: 30px;
+        text-align: center;
+    
+    }
+    #Three{
+        font-size: 14px;
+        line-height:22px ;
+        font-family: 'Barlow', sans-serif;
+        color: rgba(208, 214, 249, 100%);
+    }
+    #story{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    #two{
+        font-size: 35px;
+        font-family: 'Bellefair', serif;
+    }
+    .term{
+        display: flex;
+        justify-content: center;
+        flex-direction:column ;
+        gap: 0px;
+        margin-top: 10px;
+    }
+    #right{
+        width: 95%;
+        margin-top: 30px;
+    }
+    #left{
+        width: 100%;
+        padding-left: 0px;
+        margin-top: 30px;
+    
+    }
+    #buttn1, #buttn2, #buttn3{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 100%);
+        color: white;
+        font-size: 20px;
+        
+    }
+    .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .log0{
+        width: 45px;
+        height: 45px;
+    }
+}
