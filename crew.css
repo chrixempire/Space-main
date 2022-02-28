@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("starter-code/assets/crew/background-crew-desktop (2).jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#line{
+    border: 0.1px solid rgb(255, 255, 255, 0.2);
+    width: 550px;
+    z-index: 99;
+    position: relative;
+    left: 35px;
+}
+.nav-con{
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    width: 2000px;
+    z-index: 1;
+}
+#button2{
+    border-bottom: 3px solid white;
+    color: white;
+}
+#button1{
+    border: none;
+
+}
+#button1:hover{
+    border-bottom: 3px solid white;
+    transition: 0.5s ease-out;
+}
+img{
+    width: 50px;
+    height: 50px;
+}
+.header{
+    background-color: transparent;
+}
+li{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    padding: 0 24px;
+    
+}
+.navmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    gap: 60px;
+}
+.navlink{
+    transition: 0.7s ease;
+}
+.navlink:hover{
+    color: dodgerblue;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out ;
+    background-color: white;
+
+}
+
+.pick{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-bottom: 120px;
+
+}
+.span2{
+    color: grey;
+    margin-right: 15px;
+    font-weight: bold;
+}
+#creww{
+    width: 500px;
+    height: 600px;
+}
+.flex3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-flex{
+    width: 45%;
+    padding-left: 100px;
+    margin-top: 50px;
+}
+.right-flex{
+    width: 45%;
+    padding-left: 100px;
+    margin-top: 50px;
+    
+}
+#rank{
+    font-family: 'Bellefair', serif;
+    font-size: 30px;
+    color: rgb(90, 92, 99);
+}
+#name{
+    font-family: 'Bellefair', serif;
+    font-size:50px;
+    color: white;
+    margin-top: 0px;
+}
+#smbtn, #smbtn1, #smbtn2, #smbtn3{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    background-color: grey;
+}
+#spech{
+    width: 400px;
+    height: 150px;
+}
+#speech{
+    color: #D0D6F9;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    line-height: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+.small-btn{
+    display: flex;
+    margin-top: 80px;
+    gap: 20px;
+}
+.smbtn:hover{
+    transform: scale(1.5);
+  
+}
+#button3{
+    border-bottom: 3px solid white;
+}
+.left2{
+    display: none;
+}
+.line{
+    display: none;
+}
+#line{
+    display: block;
+}
+
+
+@media screen and (max-width : 950px){
+    .header{
+        display:block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+       
+        
+    }
+    body{
+        background-image: url("starter-code/assets/destination/background-destination-tablet (2).jpg");
+        background-size: cover;
+        overflow: visible;
+    }
+    #line{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-left: 20px;
+        padding-right: 20px;
+
+    
+    }
+    .nav-links button{
+        background-color: transparent;
+        width: 110px;
+        height:110px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-con{
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        width: 100%;
+        z-index: 1;
+        margin-top: 0px;
+    }
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+    }
+    .nav-links button:hover{
+        border-bottom: 4px solid white;
+        transition: 0.2s ease-in;
+        
+    }
+    .navmenu{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    #creww{
+        width: 300px;
+        height: 350px;
+    }
+    .flex3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    .left-flex{
+        width: 90%;
+        padding-left: 100px;
+        margin-top: 45px;
+    }
+
+    .right-flex{
+        width: 90%;
+        height: 370px;
+        padding-left: 0px;
+        margin-top: 55px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #rank{
+        font-family: 'Bellefair', serif;
+        font-size: 35px;
+        color: rgb(90, 92, 99);
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #name{
+        font-family: 'Bellefair', serif;
+        font-size:55px;
+        color: white;
+        margin-top: 0px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #smbtn, #smbtn1, #smbtn2, #smbtn3{
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background-color: grey;
+
+    }
+    #spech{
+        width: 90%;
+    }
+    #speech{
+        color: #D0D6F9;
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .small-btn{
+        display: flex;
+        margin-top: 0px;
+        gap: 30px;
+    }
+    #button3{
+        border-bottom: 3px solid white;
+    }
+    .pick{
+        font-size: 35px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .left1{
+        margin: 0px;
+        padding: 0px;
+        width: 300px;
+        margin-left: -400px;
+        margin-top: -90px;
+        margin-bottom: 20px;
+    }
+    .left-flex{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    #creww{
+        width: 350px;
+        height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        /* border: 1px solid red; */
+    }
+    .left2{
+        display: none;
+    }
+    .line{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width : 600px){
+    body{
+        background-image: url("starter-code/assets/crew/background-crew-mobile.jpg");
+        background-size: cover;
+        border: 1px solid transparent;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navmenu{
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(25px); 
+        width: 75%;
+        text-align: center;
+        transition: 0.3s;
+        padding-top: 100px;
+
+    }
+    .navitem{
+        margin: 30px 0;
+    }
+    .navmenu.active{
+        right: 0;
+        transition: 0.4s ease-in-out;
+        scroll-behavior: smooth;
+
+    }
+    nav{
+        display: block;
+    }
+    .navmenu{
+        display: block;
+    }
+    .navlink{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        padding: 5px 35px;
+        font-size: 23px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 300;
+        color: white;
+    }
+    .span1{
+        font-size: 23px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+        color: white;
+        margin-right: 10px;
+    }
+
+    .flex3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+       
+    }
+    .flex4{
+        display: none;
+    }
+    .left-flex{
+        width: 90%;
+        padding-left: 0px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .right-flex{
+        width: 95%;
+        height: 350px;
+        padding-left: 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        gap: 20px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    .about{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #rank{
+        font-family: 'Bellefair', serif;
+        font-size: 20px;
+        color: rgb(90, 92, 99);
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #name{
+        font-family: 'Bellefair', serif;
+        font-size:28px;
+        color: white;
+        margin-top: 0px;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #smbtn, #smbtn1, #smbtn2, #smbtn3{
+        width: 17px;
+        height: 17px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        
+        background-color: grey;
+
+    }
+    #speech{
+        color: #D0D6F9;
+        font-size: 14px;
+        width: 95%;
+        height: 150px;
+        line-height: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        margin-top: 3px;
+        text-align: center;
+    }
+    header{
+        margin-top: 20px;
+    }
+    .small-btn{
+        display: flex;
+        margin-top: 0px;
+        gap: 30px;
+        margin-top:-40px;
+        
+    }
+    #button3{
+        border-bottom: 3px solid white;
+    }
+    .pick{
+        font-size:22px;
+        margin: 0px;
+        padding: 0px;
+    }
+    .left1{
+        margin: 0px;
+        padding: 0px;
+        width: 300px;
+        margin-bottom: 0px;
+        display: none;
+    }
+    .left2{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .left-flex{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    #creww{
+        width: 230px;
+        height: 300px;
+    }
+    .span2{
+        color: grey;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    .image{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-direction: column;                                 
+    }
+    .lin{
+        display: block;
+        border: 0.1px solid grey;
+        width: 100%;
+        display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #line{
+        display:none;
+    }
+    #creww{
+        margin:auto;
+    }
+    .log0{
+        width: 45px;
+        height: 45px;
+    }
+}

@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url("starter-code/assets/destination/background-destination-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.line{
+    border: 0.1px solid rgb(255, 255, 255, 0.2);
+    width: 550px;
+    z-index: 99;
+    position: relative;
+    left: 40px;
+}
+.nav-con{
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(81.5485px);
+    width: 1000px;
+    z-index: 1;
+}
+#button2{
+    border-bottom: 3px solid white;
+    color: white;
+}
+#button1{
+    border: none;
+
+}
+.pick{
+    color: white;
+}
+.left{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+    height: 550px;
+}
+.pick{
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 40px;
+
+}
+.span2{
+    color: grey;
+    margin-right: 15px;
+    font-weight: bold;
+}
+.right{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 120px;
+    color: white;
+    padding-left: 50px;
+}
+.Flex1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.moon-flex{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.moon-flex button{
+    font-family: 'Barlow Condensed', sans-serif;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgba(208, 214, 249, 1);
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.moon-flex button:hover{
+    border-bottom: 3px solid white;
+    color: white;
+}
+.moon-flex button:focus{
+    border-bottom: 3px solid white;
+    color: white;
+}
+
+.Hone h1{
+    font-size:90px;
+    font-family:'Bellefair', serif ;
+}
+.pmoon p{
+    font-size: 16px;
+    font-family: 'Barlow', sans-serif;
+    line-height: 24px;
+    text-align: justify;
+    color: rgba(208, 214, 249, 1);
+}
+.pmoon{
+    width: 70%;
+    height: 120px;
+    /* border: 1px solid red; */
+}
+.line2{
+    border: 0.1px solid rgb(255, 255, 255, 0.2);
+    width: 70%;
+    margin-top: -10px;
+
+}
+.in-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 0px;
+}
+.in-flex1 p{
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.in-flex1 h3{
+    margin-top: 5px;
+    font-size: 24px;
+    font-family:'Bellefair', serif ;
+  
+}
+.in-flex2 p{
+    font-size: 16px;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.in-flex2 h3{
+    margin-top: 5px;
+    font-size: 24px;
+    font-family:'Bellefair', serif ;
+}
+.left2 img{
+    margin-left: 300px;
+    width: 450px;
+    height: 450px;
+}
+.left1{
+    margin-left: 50px;
+}
+#bttn1{
+    border-bottom: 3px solid white;
+    color: white;
+   
+}
+#bttn1:focus{
+    border-bottom: 3px solid white;
+    color: white;
+}
+#button1:hover{
+    border-bottom: 3px solid white;
+}
+@media screen and (max-width : 950px){
+    .header{
+        display:block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        width: 100%;
+        margin: auto;
+       
+        
+    }
+    body{
+        background-image: url("starter-code/assets/destination/background-destination-tablet (2).jpg");
+        background-size: cover;
+        overflow: visible;
+    }
+    .line{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-left: 20px;
+        padding-right: 20px;
+
+    
+    }
+    .nav-links button{
+        background-color: transparent;
+        width: 110px;
+        height:110px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .nav-links a{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    .nav-con{
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(81.5485px);
+        width: 100%;
+        z-index: 1;
+        margin-top: 0px;
+       
+    }
+    .nav-bar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 65%;
+    }
+    .nav-links button:hover{
+        border-bottom: 4px solid white;
+        transition: 0.2s ease-in;
+        
+    }
+    .navmenu{
+        display: none;
+    }
+    nav{
+        display: none;
+    }
+    .Flex1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+        padding: 0px;
+        margin: 0px;
+        width: 90%;
+        margin: auto;
+
+    }
+    .left{
+        width: 90%;
+        height: 470px;
+        margin: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 25px;
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 90%;
+        margin: 0px;
+        gap: 10px;
+        margin-bottom: 30px;
+        padding: 0px;
+    }
+    .in-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 10px;
+    }
+    .left2 img{
+        margin-left: 0px;
+        width: 350px;
+        height: 350px;
+    }
+    .pmoon{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .pmoon p{
+        font-size: 18px;
+        font-family: 'Barlow', sans-serif;
+        line-height: 28px;
+        text-align: center;
+        color: rgba(208, 214, 249, 1);
+    }
+    .line2{
+        border: 0.1px solid rgb(255, 255, 255, 0.2);
+        width: 90%;
+        margin-top: 10px;
+    
+    }
+    .left1{
+        margin-top: -100px;
+        margin-left: -330px;
+    }
+    .pick{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 35px;
+        color: white;
+        margin-bottom: 0px;
+        margin-top: 50px;
+    
+    }
+    .span2{
+        color: grey;
+        margin-right: 15px;
+        font-weight: bold;
+    }
+    .in-flex1 p{
+        font-size: 18px;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: rgba(208, 214, 249, 1);
+    }
+    .in-flex1 h3{
+        margin-top: 10px;
+        font-size: 28px;
+        font-family:'Bellefair', serif ;
+      
+    }
+    .in-flex2 p{
+        font-size: 18px;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: rgba(208, 214, 249, 1);
+    }
+    .in-flex2 h3{
+        margin-top: 10px;
+        font-size: 28px;
+        font-family:'Bellefair', serif ;
+    }
+    .in-flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    }
+    .in-flex1, .in-flex2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width : 600px){
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        background-image: url("starter-code/assets/destination/background-destination-mobile (2).jpg");
+        background-size: cover;
+    }  
+    .left{
+        width: 95%;
+        height: 270px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 25px;
+        gap: 20px;
+        margin: 0px;
+        margin-top: 15px;
+    } 
+    .left2 img{
+        margin-top: -20px;
+        width: 200px;
+        height: 200px;
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 95%;
+        margin: 0px;
+        gap: 10px;
+        margin-top: 10px;
+        padding: 0px;
+        
+    }
+    .left1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0px;
+    }
+    .left1 p{
+        margin: 0px;
+        padding: 0px;
+     }
+     .pick{
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 25px;
+        
+    
+    }
+    .pmoon p{
+        font-size: 15px;
+        font-family: 'Barlow', sans-serif;
+        line-height: 26px;
+        text-align: center;
+        color: rgba(208, 214, 249, 1);
+    }
+    .Hone h1{
+        font-size:80px;
+        font-family:'Bellefair', serif ;
+    }
+    .in-flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: -5px;
+    }
+    .in-flex1, .in-flex2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 5px;
+    }
+    .line2{
+        width: 100%;
+        margin-top: -3PX;
+    }
+    .span2{
+        color: grey;
+        margin-right: 5px;
+        font-weight: bold;
+    }
+    .in-flex1 h3{
+        margin-top: 10px;
+        font-size: 25px;
+        font-family:'Bellefair', serif ;
+      
+    }
+    .in-flex2 p{
+        font-size: 18px;
+        font-family: 'Barlow Condensed', sans-serif;
+        color: rgba(208, 214, 249, 1);
+    }
+    .in-flex2 h3{
+        margin-top: 10px;
+        font-size: 25px;
+        font-family:'Bellefair', serif ;
+    }
+    .navmenu{
+        display: block;
+    }
+    nav{
+        display: block;
+    }
+    header{
+        margin-top: 20px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navmenu{
+        position: fixed;
+        right: -100%;
+        top: 0px;
+        gap: 0;
+        flex-direction: column;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(25px); 
+        width: 75%;
+        height: 100vh;
+        text-align: center;
+        transition: 0.3s ease-in;
+        padding-top: 100px;
+
+    }
+    .navitem{
+        margin: 30px 0;
+    }
+    .navmenu.active{
+        right: 0;
+        transition: 0.4s ease-in-out;
+        scroll-behavior: smooth;
+
+    }
+    .navmenu{
+        display: block;
+    }
+    nav{
+        display: block;
+    }
+    header{
+        display: block;
+    }
+    .navlink{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        padding: 5px 35px;
+        font-size: 23px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 300;
+        color: white;
+    }
+    .span1{
+        font-size: 23px;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 600;
+        color: white;
+        margin-right: 10px;
+    }
+    .log0{
+        width: 45px;
+        height: 45px;
+        
+    }
+
+}
